@@ -1,0 +1,139 @@
+@use '../global' as global;
+
+.p-news {
+  margin: 0 25.5469%;
+
+  @include global.mq(sp) {
+    margin: 0;
+  }
+}
+
+.p-news__index {
+  margin-top: 23.08px;
+  margin-left: 37.4%;
+  line-height: 2;
+
+  @include global.mq(sp) {
+    margin-top: 14px;
+    margin-left: 0;
+  }
+}
+
+.p-news__item {
+  width: inherit;
+  padding-top: 25px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-family: global.$ff-en;
+  max-width: 100%;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #CCCCCC;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include global.mq(sp) {
+    margin-top: 14px;
+    width: 295px;
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+}
+
+.p-news__index-date {
+  font-weight: 400;
+}
+
+.p-news__index-title {
+  margin-left: 70px;
+
+  @include global.mq(sp) {
+    margin-left: 40px;
+  }
+}
+
+.p-news__index-footer {
+  margin-top: 50px;
+  text-align: right;
+
+  @include global.mq(sp) {
+    margin-top: 30px;
+  }
+}
+
+.p-news__view-more {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: .01;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+  }
+}
+
+.p-news__footer {
+  margin-top: 58px;
+  padding-left: 30.0112%;
+  display: flex;
+  align-items: center;
+
+  @include global.mq(sp) {
+    margin: 40px auto 0;
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+
+.p-news__label {
+  margin-left: 64px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @include global.mq(sp) {
+    margin-left: 46px;
+  }
+}
+
+.p-news__number {
+  font-weight: 700;
+  line-height: 2;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+  }
+
+  &.-action {
+    color: #fff;
+
+    &::after {
+      background: global.$link-btn-color;
+      border: transparent;
+    }
+  }
+
+  @include global.mq(sp) {
+    font-size: 10px;
+    line-height: 1.6;
+
+    &::after {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

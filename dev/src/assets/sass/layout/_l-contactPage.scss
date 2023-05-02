@@ -1,0 +1,13 @@
+@use '../global' as global;
+
+.l-contactPage {
+     margin-top: 40px;
+
+     &__read {
+          margin-bottom: 70px;
+
+               @include global.mq(sp) {
+                    margin-bottom: 40px;
+               }
+     }
+}

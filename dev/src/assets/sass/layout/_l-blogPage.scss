@@ -1,0 +1,47 @@
+@use '../global' as global;
+
+.l-blogPage {
+    margin-top: 120px;
+    margin-bottom: 80px;
+
+        @include global.mq(sp) {
+            margin-top: 82px;
+            margin-bottom: 50px;
+        }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+            @include global.mq(sp) {
+                flex-direction: column;
+                gap: 0;
+            }
+    }
+
+    &__main {
+        width: 74%;
+        flex-shrink: 0;
+
+            @include global.mq(sp) {
+                width: 100%;
+            }
+    }
+
+    &__aside {
+        width: 23%;
+
+            @include global.mq(sp) {
+                width: 100%;
+                margin-top: 64px;
+            }
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .l-blogPage__wrapper {
+        gap: 10px;
+    }
+}

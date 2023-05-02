@@ -1,0 +1,77 @@
+@use '../global' as global;
+
+.c-product-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  max-width: 100%;
+  height: 444.75px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  transition: opacity .3s;
+  cursor: pointer;
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+  }
+}
+
+.c-product-card__img {
+  background: #ccc;
+  width: 100%;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+    height: 218.75px;
+
+  }
+}
+
+.c-product-card__content {
+  margin: 15px auto 30px;
+  width: 100%;
+  height: 226px;
+}
+
+.c-product-card__tag {
+  display: inline;
+  margin-left: 20px;
+  font-weight: 400;
+  padding: 5px 10px;
+  background: global.$main-color;
+  color: #fff;
+  border-radius: 5px;
+
+  @include global.mq(sp) {
+    font-size: 14px;
+  }
+}
+
+.c-product-card__title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.58;
+  text-align: center;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+  }
+}
+
+.c-product-card__text {
+  margin: 16px auto 0px;
+  width: 65.7143%;
+  height: 56.6637%;
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 2;
+  font-family: global.$ff-en;
+  padding-left: 5px;
+
+  @include global.mq(sp) {
+    font-size: 14px;
+  }
+}

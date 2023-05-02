@@ -1,0 +1,49 @@
+@use '../global' as global;
+
+.p-contactPage-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        font-family: global.$ff-en;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333;
+
+            @include global.mq(sp) {
+                font-size: 20px;
+                line-height: 26px;
+            }
+    }
+
+    &__btn {
+        margin-top: 70px;
+        background-color: #fff;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 38px;
+        color: #969696;
+        border: 1px solid #969696;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 13px 90px;
+        border-radius: 50px;
+        position: relative;
+    
+            @include global.mq(sp) {
+                padding: 10px 70px;
+            }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: url(../img/parts/line-gray.svg)no-repeat center center/contain;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

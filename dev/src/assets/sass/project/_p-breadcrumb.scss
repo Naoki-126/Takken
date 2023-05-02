@@ -1,0 +1,31 @@
+@use '../global' as global;
+
+// パンクずリスト
+.p-breadcrumb {
+    display: flex;
+    gap: 73px;
+
+        @include global.mq(sp) {
+            gap: 34px;
+        }
+
+    &__item {
+        position: relative;
+
+        & + &::before {
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: calc( 73px / (-2));
+            transform: translateY( -50%);
+            color: #35402F;
+
+                @include global.mq(sp) {
+                    left: calc( 34px / ( -2));
+                }
+        }
+    }
+}

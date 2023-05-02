@@ -1,0 +1,29 @@
+@use '../global' as global;
+
+.l-header {
+    // 高さ 横幅
+    padding: 14px 100px;
+    // 位置
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    // 幅
+    width: 100%;
+
+    &.is-show {
+        position: fixed;
+        background: linear-gradient(to bottom, #021B79, #8ab8e5);
+        filter:drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+        opacity: 1;
+        color: #fff;
+    }
+
+    @include global.mq(tab) {
+        padding: 20px 40px;
+    }
+
+    @include global.mq(sp) {
+        padding: 20px 20px;
+    }
+}

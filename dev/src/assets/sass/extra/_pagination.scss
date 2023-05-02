@@ -1,0 +1,38 @@
+@use '../global' as global;
+
+.page-numbers {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #fff;
+  border: solid 1px #333;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: #111;
+    color: #fff;
+  }
+
+  & > * + * {
+    margin-left: 30px;
+
+        @include global.mq(sp) {
+            margin-left: 15px;
+        }
+  }
+}
+
+.current {
+  background: global.$main-color;
+    color: #fff;
+    border: 1px solid global.$main-color;
+    pointer-events: none;
+}

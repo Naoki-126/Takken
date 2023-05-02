@@ -1,0 +1,214 @@
+@use '../global' as global;
+
+.p-contactPage {
+
+    &__read {
+        font-family: global.$ff-en;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333;
+        text-align: center;
+
+            @include global.mq(sp) {
+                font-size: 16px;
+                line-height: 32px;
+            }
+    }
+
+    &__form {
+
+    }
+
+    &__contents {
+        
+    }
+
+    &__item {
+        &:not(:first-of-type) {
+            margin-top: 50px;
+        }
+    }
+
+    &__dt {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &__title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1;
+
+                @include global.mq(sp) {
+                    font-size: 16px;
+                }
+        }
+
+
+        &__inline {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 14px;
+            color: #fff;
+            background-color: global.$main-color;
+            padding: 3px 12px;
+            border-radius: 6px;
+            margin-left: 10px;
+
+                @include global.mq(sp) {
+                    margin-left: 7px;
+                }
+        }
+    }
+
+    &__dd {
+
+        & > textarea {
+            resize: none;
+            max-width: 600px;
+            height: 220px;
+            width: 100%;
+            padding: 13px 10px 7px;
+            border-radius: 5px;
+            border: 1px solid #333;
+
+                @include global.mq(sp) {
+                    padding: 10px 7px 5px;
+                }
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: #969696;
+
+                    @include global.mq(sp) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+            }
+        }
+
+        & > input {
+            width: 100%;
+            padding: 13px 10px 7px;
+            border-radius: 5px;
+            border: 1px solid #333;
+
+                @include global.mq(sp) {
+                    padding: 10px 7px 5px;
+                }
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: #969696;
+
+                    @include global.mq(sp) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 70px;
+    }
+
+    &__footer-privacy {
+        margin-top: 42px;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__privacy {
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            width: 15px;
+            height: 15px;
+            transform: translateY(-47%);
+            border: 1px solid #333;
+            border-radius: 2px;
+        }
+
+        &::after {
+            content: '';
+            left: -16px;
+            top: 25%;
+            transform: rotate(45deg);
+            border-right: 2px solid #333;
+            border-bottom: 2px solid #333;
+            display: block;
+            width: 7px;
+            height: 12px;
+            opacity: 0;
+            position: absolute;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked + label::after {
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: global.$main-color;
+    }
+
+    &__form-submit {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+
+            @include global.mq(sp) {
+                margin-top: 50px;
+                margin-bottom: 70px;
+            }
+    }
+
+    &__submit {
+        background-color: #fff;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 38px;
+        color: #969696;
+        border: 1px solid #969696;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 13px 90px;
+        border-radius: 50px;
+        position: relative;
+
+            @include global.mq(sp) {
+                padding: 10px 70px;
+            }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: url(../img/parts/line-gray.svg)no-repeat center center/contain;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

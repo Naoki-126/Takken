@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "../global" as global;
+
+.l-to-top-button {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 50px;
+  right: 28px;
+  transition: all 0.3s ease;
+  z-index: map.get(global.$layer, floating);
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @include global.mq(tab) {
+    bottom: 25px;
+    right: 16px;
+  }
+
+  @include global.mq(sp) {
+    bottom: 25px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../global" as global;
+
+.l-aboutPage {
+
+  &__inner {
+    padding-block: 120px 80px;
+    padding-inline: 18.0556%;
+
+    @include global.mq(tab) {
+      padding-block: 80px 60px;
+      padding-inline: 8%;
+    }
+  }
+
+  &__container {
+
+  }
+}

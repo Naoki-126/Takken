@@ -1,0 +1,11 @@
+@use '../global' as global;
+
+.l-pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    @include global.mq("sp") {
+      margin-top: 24px;
+    }
+}

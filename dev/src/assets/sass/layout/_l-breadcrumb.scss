@@ -1,0 +1,9 @@
+@use '../global' as global;
+
+.l-breadcrumb {
+    margin-top: 38px;
+
+        @include global.mq(sp) {
+            margin-top: 18px;
+        }
+}
