@@ -1,11 +1,3 @@
-<?php
-    /*
-        Template Name: Home
-    */
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 <!-- OGP宣言 -->
@@ -256,80 +248,25 @@
                         );
                         $the_query = new WP_Query($args);
                         ?>
-                    <?php if ($the_query->have_posts()) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <!-- Slides -->
-                        <li class="swiper-slide">
-                            <a href="<?php the_permalink(); //記事のリンクを表示 ?>" class="p-card">
-                                <div class="p-card__head">
-                                    <?php if(has_post_thumbnail()):?>
-                                        <?php the_post_thumbnail(); ?>
-                                        <?php else: ?>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="no-image">
-                                    <?php endif; ?>
-                                </div>
+                        <?php if ($the_query->have_posts()) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <!-- Slides -->
+                            <li class="swiper-slide">
+                                <a href="<?php the_permalink(); //記事のリンクを表示 ?>" class="p-card">
+                                    <div class="p-card__head">
+                                        <?php if(has_post_thumbnail()):?>
+                                            <?php the_post_thumbnail(); ?>
+                                            <?php else: ?>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="no-image">
+                                        <?php endif; ?>
+                                    </div>
 
-                                <div class="p-card__body">
-                                    <p class="p-card__title"><?php the_title(); ?></p>
-                                    <div class="p-card__description"><?php the_excerpt(15); ?></div>
-                                </div>
-                            </a>
-                        </li>
-                    <?php endwhile; wp_reset_postdata(); endif; ?>
-
-
-                        <!-- <li class="swiper-slide">
-                            <a class="p-card">
-                                <div class="p-card__head">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog-card-img2.png" alt="card">
-                                </div>
-                                <div class="p-card__body">
-                                    <p class="p-card__title">タイトル</p>
-                                    <p class="p-card__description">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキステキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a class="p-card">
-                                <div class="p-card__head">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog-card-img3.png" alt="card">
-                                </div>
-                                <div class="p-card__body">
-                                    <p class="p-card__title">タイトル</p>
-                                    <p class="p-card__description">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキステキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a class="p-card">
-                                <div class="p-card__head">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/mv-img__sp.jpg" alt="card">
-                                </div>
-                                <div class="p-card__body">
-                                    <p class="p-card__title">タイトル</p>
-                                    <p class="p-card__description">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキステキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a class="p-card">
-                                <div class="p-card__head">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/mv-img__sp.jpg" alt="card">
-                                </div>
-                                <div class="p-card__body">
-                                    <p class="p-card__title">タイトル</p>
-                                    <p class="p-card__description">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキステキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス…
-                                    </p>
-                                </div>
-                            </a>
-                        </li> -->
-
+                                    <div class="p-card__body">
+                                        <p class="p-card__title"><?php the_title(); ?></p>
+                                        <div class="p-card__description"><?php the_excerpt(15); ?></div>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endwhile; wp_reset_postdata(); endif; ?>
                     </ul>
                 </div>
                 <!-- If we need navigation buttons -->
