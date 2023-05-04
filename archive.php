@@ -17,7 +17,7 @@
     <?php if (function_exists('bcn_display')) : ?>
     <!-- breadcrumb -->
     <div class="l-inner__breadcrumb l-breadcrumb">
-        <?php bcn_display(); ?>
+    <div class="p-breadcrumb l-blogPage__breadcrumb"><?php bcn_display(); ?></div>
     </div>
     <?php endif; ?>
 
