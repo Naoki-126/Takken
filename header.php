@@ -8,13 +8,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no"><!-- 電話のリンクをしない設定 -->
 
-	<meta property="og:title" content="START"><!-- OGPタイトル -->
+	<meta property="og:title" content="Takken"><!-- OGPタイトル -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://example.com/"><!-- OGPサイトURL -->
-	<meta property="og:image" content="https://example.com/img/ogp.png"><!-- OGPサムネイル -->
-	<meta property="og:site_name" content="START"><!-- OGPサイトネーム -->
-	<meta property="og:description" content="説明文"><!-- OGPサイトの概要欄 -->
+	<meta property="og:url" content="https://wp-1.naoki126-web.com/"><!-- OGPサイトURL -->
+	<meta property="og:image" content="http://wp-1.naoki126-web.com/wp-content/uploads/2023/04/mv-img__pc-scaled.jpg"><!-- OGPサムネイル -->
+	<meta property="og:site_name" content="Takken"><!-- OGPサイトネーム -->
+	<meta property="og:description" content="宅研販売ホームページ"><!-- OGPサイトの概要欄 -->
 	<meta name="twitter:card" content="summary_large_image"><!-- OGP Twitterカード -->
+	<meta name="twitter:site" content="@naoking_web" /><!-- OGP Twitter site -->
 	<!-- fontawesome -->
 	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?ver=5.8.2"> -->
 	<!-- GoogleFonts 1 Inter -->

@@ -3,10 +3,10 @@
 // パンクずリスト
 .p-breadcrumb {
     display: flex;
-    gap: 73px;
+    gap: 30px;
 
         @include global.mq(sp) {
-            gap: 34px;
+            gap: 10px;
         }
 
     &__item {
