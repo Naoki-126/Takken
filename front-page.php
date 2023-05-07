@@ -8,7 +8,7 @@
             <div class="l-mv__content-area p-mv__content-area">
                 <p class="p-mv__read-main">戸車国内シェア<span class="p-mv__read-main__span">No.1</span></p>
                 <p class="p-mv__read-sub l-mv__read-sub c-animate-title">戸車と共に歩む、未来への回転</p>
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-mv__contact u-hidden-pc c-btn l-mv__contact">お問い合わせ</a>
+                <a href="#" class="p-mv__contact u-hidden-pc c-btn l-mv__contact">お問い合わせ</a>
             </div>
             <!-- /.p-mv__content-area -->
         </div>
@@ -17,31 +17,35 @@
     <!-- /.l-bg-wrapper -->
     <main>
         <section class="l-news">
-            <div class="l-news__title">
-                <h2 class="c-section__title">News</h2>
-                <span class="c-section__title__sub">お知らせ</span>
-            </div>
-            <div class="p-news__index">
-                <?php
-                    $args = array(
-                    'post_type' => 'news',
-                    'posts_per_page' => 3,
-                    );
-                    $new_posts = new WP_Query($args);
-                ?>
-                <?php if ($new_posts->have_posts()) : while ( $new_posts->have_posts()) : $new_posts->the_post(); ?>
-                    <a href="<?php the_permalink(); ?>" class="p-news__item">
-                        <time class="p-news__index-date"><?php echo get_the_date(); ?></time>
-                        <p class="p-news__index-title"><?php the_title(); ?></p>
-                    </a>
-                <?php endwhile; wp_reset_postdata(); endif; ?>
-
-                <div class="p-news__index-footer">
-					<a href="<?php echo esc_url(home_url('/news')); ?>"  class="p-news__view-more c-btn-view-more">
-							<span>view&nbsp;more</span>
-					</a>
+            <div class="l-inner">
+                <div class="l-news__title">
+                    <h2 class="c-section__title">News</h2>
+                    <span class="c-section__title__sub">お知らせ</span>
                 </div>
+                <div class="p-news__index">
+                    <?php
+                        $args = array(
+                        'post_type' => 'news',
+                        'posts_per_page' => 3,
+                        );
+                        $new_posts = new WP_Query($args);
+                    ?>
+                    <?php if ($new_posts->have_posts()) : while ( $new_posts->have_posts()) : $new_posts->the_post(); ?>
+                        <a href="<?php the_permalink(); ?>" class="p-news__item">
+                            <time class="p-news__index-date"><?php echo get_the_date(); ?></time>
+                            <p class="p-news__index-title"><?php the_title(); ?></p>
+                        </a>
+                    <?php endwhile; wp_reset_postdata(); endif; ?>
+
+                    <div class="p-news__index-footer">
+                        <a href="<?php echo esc_url(home_url('/news')); ?>"  class="p-news__view-more c-btn-view-more">
+                                <span>view&nbsp;more</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.p-news__index -->
             </div>
+            <!-- /.l-inner -->
         </section>
         <!-- /.l-news -->
         <section class="l-about">
@@ -73,11 +77,12 @@
         </section>
         <!-- /.l-about -->
         <section class="l-products">
+        <div class="l-inner">
+                <h2 class="c-section__title">Products</h2>
+                <span class="c-section__title__sub">製品紹介</span>
+            </div>
+            <!-- /.l-inner -->
             <div class="l-products__inner">
-                <div class="l-products__title">
-                    <h2 class="c-section__title">Products</h2>
-                    <span class="c-section__title__sub">製品紹介</span>
-                </div>
                 <div class="p-products__index">
                     <div class="p-products__items">
                         <a href="<?php echo esc_url(home_url('/genre/door')); ?>" class="p-products__item">

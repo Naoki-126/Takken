@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 <!-- OGP宣言 -->
@@ -32,6 +31,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<!-- CSS -->
 	<!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<!-- ファビコンの設定 -->
 	<!-- <link rel="icon" type="image/png" href=""> 192 * 192 -->
 	<!-- <link rel="icon" type="image/png" href=""> 180 * 180 -->
