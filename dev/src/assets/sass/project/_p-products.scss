@@ -105,12 +105,13 @@
 
 .p-products__categories {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
 
   @include global.mq(sp) {
-    flex-flow: column;
+    // flex-flow: column;
   }
 }
 
