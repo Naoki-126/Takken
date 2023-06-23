@@ -9,6 +9,7 @@
   &__inner {
     padding: 80px 0;
     padding-left: 15.2672%;
+    // padding-left: 220px;
 
     @include global.mq (tab) {
       margin: auto;
