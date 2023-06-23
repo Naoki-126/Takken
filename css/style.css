@@ -218,7 +218,6 @@ a {
 
 .l-news__title {
 	height: auto;
-	margin-left: 220px;
 	max-width: 100%;
 	width: 1440px;
 }
@@ -417,10 +416,10 @@ a {
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	color: #285DB1;
 	display: inline-block;
-	font-size: 18px;
+	font-size: min(1.25vw, 18px);
 	font-weight: bold;
 	line-height: 36px;
-	padding: 13px 80px;
+	padding: min(0.27778vw, 13px) min(5.55556vw, 80px);
 	position: relative;
 	transition: background-color 0.3s, color 0.3s;
 }
@@ -972,6 +971,7 @@ a {
 	color: #fff;
 	font-family: "Helvetica Neue", "Roboto", sans-serif;
 	font-size: 18px;
+	font-size: min(1.25vw, 18px);
 	line-height: 36px;
 	position: relative;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -2985,6 +2985,7 @@ a {
 }
 
 .c-btn--Wh2 {
+	font-size: 18px;
 	font-style: 14px;
 	line-height: 22px;
 	padding: 9px 58px;

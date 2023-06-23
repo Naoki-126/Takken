@@ -11,7 +11,6 @@
 }
 
 .l-news__title {
-  margin-left: 220px;
   width: 1440px;
   max-width: 100%;
   height: auto;
@@ -24,7 +23,7 @@
 .l-news__page {
   margin: 142px auto 88px;
   max-width: calc(1240px + 20px + 20px); // calcの中に#{$inner-width}を設定し、gulpを使用するとエラーが出るので注意
- 
+
 
   @include global.mq(sp) {
     margin: 82px auto 60px;

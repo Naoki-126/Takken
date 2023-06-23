@@ -131,7 +131,7 @@
 .c-btn--Wh2 {
     //サイズ
     font-weight: bold;
-    font-size: 18px;
+    font-size: min(1.25vw, 18px);
     line-height: 36px;
     // 色
     color: global.$link-btn-color;
@@ -139,7 +139,7 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     // 位置
-    padding: 13px 80px;
+    padding: min(.27778vw, 13px) min(5.55556vw, 80px);
     display: inline-block;
     position: relative;
     // アニメーション
@@ -147,6 +147,7 @@
 
         @include global.mq(sp) {
             //サイズ
+            font-size: 18px;
             font-style: 14px;
             //行間
             line-height: 22px;
