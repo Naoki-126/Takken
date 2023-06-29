@@ -74,6 +74,7 @@
         }
 
         &__content {
+            width: calc(100% - 94px);
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3; /* 制限したい行数が3の場合 */

@@ -55,6 +55,11 @@
   font-weight: 800;
   line-height: 1.58;
   text-align: center;
+  // CSS側での文字制限処置　PHP側で操作した方がいいかもしれない
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 
   @include global.mq(sp) {
     font-size: 16px;
@@ -64,12 +69,18 @@
 .c-product-card__text {
   margin: 16px auto 0px;
   width: 65.7143%;
-  height: 56.6637%;
+  width: 80%;
+  // height: 56.6637%;
   overflow: hidden;
   font-weight: 400;
   line-height: 2;
   font-family: global.$ff-en;
   padding-left: 5px;
+  // 文字制限処理
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 
   @include global.mq(sp) {
     font-size: 14px;
