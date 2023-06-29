@@ -73,20 +73,21 @@
     }
 
     &__description {
+        width: 100%;
+        height: auto;
         font-family: global.$ff-en;
         font-weight: 400;
         font-size: 16px;
-        line-height: 32px;
+        line-height: 1.8;
         // 文字制限処理
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
         overflow: hidden;
 
-            @include global.mq(sp) {
-                font-size: 14px;
-                line-height: 22px;
-            }
+        @include global.mq(sp) {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 }
-

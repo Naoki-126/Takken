@@ -35,6 +35,7 @@
                         )
                     );
                     ?>
+
                     <?php if ($recent_query->have_posts()) : ?>
                         <?php while($recent_query->have_posts()) : ?>
                             <?php $recent_query->the_post(); ?>
@@ -47,11 +48,13 @@
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="">
                                         <?php endif; ?>
                                     </div>
-                                    <div class="p-aside__lists1__content"><?php the_excerpt(); ?></div>
+                                    <!-- <div class="p-aside__lists1__content"><?php the_excerpt(); ?></div> -->
+                                    <div class="p-aside__lists1__content"><?php echo wp_trim_words( get_the_content(), 15, '…' ); ?></div>
                                 </a>
                             </li>
                         <?php endwhile; ?>
                     <?php endif; ?>
+
                     <?php wp_reset_postdata(); ?>
                 </ul>
             </div>

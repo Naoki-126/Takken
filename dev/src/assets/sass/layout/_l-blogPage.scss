@@ -12,7 +12,7 @@
     &__wrapper {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 40px;
 
             @include global.mq(sp) {
