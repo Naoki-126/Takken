@@ -1693,7 +1693,7 @@ a {
 .p-about__text {
 	font-size: 18px;
 	font-weight: 400;
-	line-height: 24px;
+	line-height: 2;
 	padding-right: 35.3%;
 	padding-top: 20px;
 }

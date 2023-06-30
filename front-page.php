@@ -55,7 +55,7 @@
                         <h2 class="c-section__title--rev">About</h2>
                         <span class="c-section__title__sub--rev">宅研販売について</span>
                         <p class="p-about__lead">戸車国内シェアNo.1</p>
-                        <p class="p-about__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p class="p-about__text">国内シェアNo.1の自信と誇り。信頼される戸車メーカーが提供する高品質な製品。優れた耐久性とスムーズな動作で、数々のプロジェクトで実績を積み重ねています。確かな品質とサポートでお客様の期待に応え、信頼のパートナーとしてお手伝いします。</p>
                         <div class="l-about__btnArea">
                             <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-about__btn c-btn-view-more--rev">
                                 <span>view&nbsp;more</span>
@@ -90,9 +90,7 @@
                                 <div class="p-products__title">扉関連機器</div>
                             </div>
                             <div class="p-products__body">
-                                <div class="p-products__text">テキストテキストテキストテキスト
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
-                                    テキストテキストテキストテキスト</div>
+                                <div class="p-products__text">頼れる戸車。静音でスムーズな動作と耐久性が特長。快適な扉の開閉をサポートします</div>
                             </div>
                         </a>
                         <a href="<?php echo esc_url(home_url('/genre/security')); ?>" class="p-products__item">
@@ -100,9 +98,7 @@
                                 <div class="p-products__title">防犯機器</div>
                             </div>
                             <div class="p-products__body">
-                                <div class="p-products__text">テキストテキストテキストテキスト
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
-                                    テキストテキストテキストテキスト</div>
+                                <div class="p-products__text">安心の防犯機器。高度なセンサー技術で不正侵入を監視し、迅速な警報を発信。家やオフィスのセキュリティを確保します。</div>
                             </div>
                         </a>
                         <a href="<?php echo esc_url(home_url('/genre/oem')); ?>" class="p-products__item">
@@ -110,9 +106,7 @@
                                 <div class="p-products__title">OEM製品</div>
                             </div>
                             <div class="p-products__body">
-                                <div class="p-products__text">テキストテキストテキストテキスト
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
-                                    テキストテキストテキストテキスト</div>
+                                <div class="p-products__text">信頼のOEM海外加工請負サポート。高品質な製品をリーズナブルな価格で実現し、お客様のビジネスを支えます。</div>
                             </div>
                         </a>
                         <a href="<?php echo esc_url(home_url('/genre/medical')); ?>" class="p-products__item">
@@ -120,9 +114,7 @@
                                 <div class="p-products__title">医療機器</div>
                             </div>
                             <div class="p-products__body">
-                                <div class="p-products__text">テキストテキストテキストテキスト
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
-                                    テキストテキストテキストテキスト</div>
+                                <div class="p-products__text">使いやすいスライドレール。医療機器のスムーズな収納と簡単なアクセスを実現。効率的な医療環境をサポートします。</div>
                             </div>
                         </a>
                     </div>
